@@ -16,5 +16,26 @@ touch .gitignore  \\ignores the files whose name is written in this file
 git diff   \\compares working area and modified
 git diff --stage  \\differences b/w present and last commit
 *******************************************************************
-git commit -a -m "message"
+git commit -a -m "message"  \\skips staging and directly commits the change
 
+git add . \\add all file
+git rm filename.type \\removes the file,,stage it automatically
+git mv filename.type newfilename.type \\rename the file and stage it
+git rm --cached filename.type \\untrack the file
+git log -p      \\commit ke sath kya difference aaya wo bhi dikhayega
+git log --stats  \\short me 
+git log -p -3     \\last 3 commits
+git log --pretty =oneline    \\show all information of commits in one line
+git log --pretty short \\thodi details
+git log ---pretty =2.days  \\last 2 days
+                   2.months
+git log --pretty= format: %an --%ae
+***********************************************************************
+git restore --staged filename.type    \\to unstage
+git checkout -- filename.type      \\to unmodify
+git checkout -f     \\all changes lost gives old commit
+****************************************************************
+git push -u origin master   \\push content to remote
+git remote            \\ek remote bnayega site ka
+git remote add name(  url(take from github)
+git remote -v  \\shows push pull links
