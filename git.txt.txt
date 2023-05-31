@@ -1,0 +1,20 @@
+git status       \\shows git status
+git init         \\create git repos
+git add --a       \\stages all the file(\\tracking also started)
+git add filename.txt          \\stages that file only
+git commit -m "Message "   \\commit a change to git repro
+git log       \\shows all the changes
+rm -rf .git    \\delete .git ie no tracking
+git clone url  nameuwanttogive
+pwd   \\present working directory
+ls  \\list content
+cd foldername/       \\change directory to that folder
+touch filename.log \\create a file with that name
+touch .gitignore  \\ignores the files whose name is written in this file
+         |->if *.log is  written inside the filev then all document ending with .log is ignored
+         |->if *.txt used then all text files ignored
+git diff   \\compares working area and modified
+git diff --stage  \\differences b/w present and last commit
+*******************************************************************
+git commit -a -m "message"
+
